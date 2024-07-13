@@ -4,5 +4,5 @@ return {
   opts = { theme = "tokyonight" },
   config = function()
     require("lualine").setup()
-  end
+  end,
 }

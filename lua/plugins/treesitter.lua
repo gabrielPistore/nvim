@@ -2,7 +2,7 @@ return {
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
   opt = {
-    ensure_installed = { 
+    ensure_installed = {
       "html",
       "javascript",
       "jsdoc",
@@ -12,5 +12,5 @@ return {
     },
     highlight = { enable = true },
     indent = { enable = true },
-  }
+  },
 }
