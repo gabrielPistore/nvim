@@ -2,11 +2,13 @@ return {
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
   opt = {
-    ensure_installed = {
-      "lua",
-      "python",
-      "javascript",
+    ensure_installed = { 
       "html",
+      "javascript",
+      "jsdoc",
+      "lua",
+      "luadoc",
+      "python",
     },
     highlight = { enable = true },
     indent = { enable = true },
