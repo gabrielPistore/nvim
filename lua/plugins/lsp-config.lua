@@ -11,6 +11,7 @@ return {
 					},
 				},
 			})
+      vim.keymap.set("n", "<leader>cm", ":Mason<CR>", {})
 		end,
 	},
 	{

@@ -6,8 +6,8 @@ return {
 		require("tokyonight").setup({
 			transparent = true,
 			styles = {
-				sidebars = true,
-				floats = true,
+				sidebars = "transparent",
+				floats = "transparent",
 			},
 		})
 		vim.cmd([[colorscheme tokyonight]])
