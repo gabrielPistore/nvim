@@ -20,7 +20,6 @@ return {
       dashboard.button("e", "  New file", ":ene<BAR>startinsert<CR>"),
       dashboard.button("f", "  Find file", ":Telescope find_files<CR>"),
       dashboard.button("g", "  Find text", ":Telescope live_grep<CR>"),
-      dashboard.button("r", "  Recently used files", ":Telescope oldfiles<CR>"),
       dashboard.button("q", "  Quit", ":qa<CR>"),
     }
     alpha.setup(dashboard.opts)
