@@ -38,6 +38,7 @@ return {
       lspconfig.tsserver.setup({ capabilities = capabilities })
       lspconfig.pyright.setup({ capabilities = capabilities })
       lspconfig.tailwindcss.setup({ capabilities = capabilities })
+      lspconfig.emmet_language_server.setup({ capabilities = capabilities })
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
