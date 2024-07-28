@@ -9,15 +9,18 @@ return {
     null_ls.setup({
       sources = {
         -- formatting
-        null_ls.builtins.formatting.stylua.with {
+        null_ls.builtins.formatting.stylua.with({
           condition = function(utils)
             return utils.root_has_file { "stylua.toml" }
           end
-        },
+        }),
         null_ls.builtins.completion.spell,
         null_ls.builtins.formatting.prettier,
         null_ls.builtins.formatting.black,
-        null_ls.builtins.formatting.djlint,
+        null_ls.builtins.formatting.djlint.with({
+          command = "djlint",
+          args = { "--reformat", "--indent", "2", "-" }
+        }),
         null_ls.builtins.formatting.isort,
 
         -- diagnostics
